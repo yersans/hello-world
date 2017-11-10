@@ -27,7 +27,7 @@ namespace hello_world
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Hello World! " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"));
             });
         }
     }
